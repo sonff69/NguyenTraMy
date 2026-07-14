@@ -14,9 +14,9 @@
     <style>
         /* --- ĐỊNH NGHĨA HỆ THỐNG MÀU SẮC & BIẾN SỐ (WHITE GLASSMORPHISM CHỦ ĐẠO) --- */
         :root {
-            --glass-bg: rgba(255, 255, 255, 0.22); /* Kính trắng trong suốt cao */
-            --glass-border: rgba(255, 255, 255, 0.45);
-            --glass-shadow: rgba(31, 38, 135, 0.08);
+            --glass-bg: rgba(255, 255, 255, 0.85); /* Tăng độ sáng để chữ cực kì dễ đọc */
+            --glass-border: rgba(255, 255, 255, 0.6);
+            --glass-shadow: rgba(31, 38, 135, 0.12);
             --accent-green: #1b4332; /* Xanh lục bảo sẫm để bảo đảm tương phản tốt */
             --accent-gold: #b58900;  /* Vàng hoàng gia trầm ấm */
             --text-title: #0f172a;   /* Xám đen đậm cho tiêu đề */
@@ -86,7 +86,7 @@
             align-items: center;
             z-index: 1000;
             transition: all 0.4s ease;
-            background: rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.45);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--glass-border);
@@ -95,8 +95,8 @@
 
         nav.scrolled {
             padding: 0.7rem 2rem;
-            background: rgba(255, 255, 255, 0.85);
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
         }
 
         .logo {
@@ -176,7 +176,7 @@
         }
 
         .hero-container {
-            background: rgba(255, 255, 255, 0.3);
+            background: var(--glass-bg);
             backdrop-filter: blur(25px);
             -webkit-backdrop-filter: blur(25px);
             border: 1px solid var(--glass-border);
@@ -391,7 +391,7 @@
         }
 
         .about-card {
-            background: rgba(255, 255, 255, 0.35);
+            background: rgba(255, 255, 255, 0.82);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border: 1px solid var(--glass-border);
@@ -442,7 +442,7 @@
         }
 
         .projects-wrapper {
-            background: rgba(255, 255, 255, 0.32);
+            background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(25px);
             -webkit-backdrop-filter: blur(25px);
             border: 1px solid var(--glass-border);
@@ -914,7 +914,7 @@
 
         /* --- PHẦN TỔNG KẾT (REFLECTION) --- */
         .reflection-card {
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.82);
             backdrop-filter: blur(25px);
             -webkit-backdrop-filter: blur(25px);
             border: 1px solid var(--glass-border);
@@ -1127,7 +1127,7 @@
             <div class="about-card">
                 <h3><i class="fas fa-feather-alt"></i> Câu chuyện truyền cảm hứng</h3>
                 <p>
-                    Là một sinh viên chuyên ngành Ngôn ngữ, kỹ năng Nói đối thoại luôn là một rào cản tâm lý vô hình, đặc biệt là trong kỷ nguyên chuyển đổi hình thức học trực tuyến đột ngột. Sự lo âu khi tương tác trong các phòng học ảo đã khơi dậy trong mình một khát khao lớn: Nghiên cứu thấu đáo tâm lý người học trực tuyến để tìm kiếm giải pháp thực tiễn.
+                    Là một sinh viên chuyên ngành Ngôn ngữ, kỹ năng Nói đối thoại luôn là một rào cản tâm lý vô hình, đặc biệt là trong kỷ nguyên chuyển đổi hình thức học trực tuyến đột ngột [1]. Sự lo âu khi tương tác trong các phòng học ảo đã khơi dậy trong mình một khát khao lớn: Nghiên cứu thấu đáo tâm lý người học trực tuyến để tìm kiếm giải pháp thực tiễn [1].
                 </p>
                 <p>
                     Bước vào học phần Công nghệ số này, mình nhận ra công nghệ không hề khô khan như tưởng tượng. Nó đóng vai trò như một người cộng sự đáng tin cậy. Khi mình biết cách viết những dòng Prompt chuẩn xác, phân loại dữ liệu logic, AI đã giúp mình cấu trúc hóa mọi suy nghĩ trừu tượng thành những sản phẩm học thuật trực quan và sắc bén.
@@ -1136,7 +1136,7 @@
             <div class="about-card">
                 <h3><i class="fas fa-graduation-cap"></i> Định Hướng & Phát Triển</h3>
                 <p>
-                    <strong>Tầm nhìn học thuật:</strong> Vận dụng nhuần nhuyễn AI làm trợ lý tư duy để khai thác các đề tài nghiên cứu ngôn ngữ, tâm lý học giáo dục một cách khách quan nhất.
+                    <strong>Tầm nhìn học thuật:</strong> Vận dụng nhuần nhuyễn AI làm trợ lý tư duy để khai thác các đề tài nghiên cứu ngôn ngữ, tâm lý học giáo dục một cách khách quan nhất [1].
                 </p>
                 <p>
                     <strong>Mục tiêu kỹ năng:</strong> Phát triển tư duy Prompt Engineering chuyên sâu kết hợp năng lực quản trị dự án số (Trello, Drive, Docs) để sẵn sàng làm việc trong môi trường đa quốc gia.
@@ -1220,7 +1220,7 @@
                                 <span class="step-badge" onclick="playStep(5)">B5: Đổi Tên</span>
                                 <span class="step-badge" onclick="playStep(6)">B6: Folder Con</span>
                                 <span class="step-badge" onclick="playStep(7)">B7: Copy</span>
-                                <span class="step-badge" onclick="playStep(8)">B8: Di chuyển (Cut)</span>
+                                <span class="step-badge" onclick="playStep(8)">B8: Tạo tệp Cut</span>
                                 <span class="step-badge" onclick="playStep(9)">B9: Paste tệp</span>
                                 <span class="step-badge" onclick="playStep(10)">B10: Xóa tệp</span>
                                 <span class="step-badge" onclick="playStep(11)">B11: Xóa vĩnh viễn</span>
@@ -1268,7 +1268,7 @@
                         </div>
                         <div class="pane-body">
                             <p>
-                                Chủ đề nghiên cứu: <strong>“Sự lo âu khi nói tiếng nước ngoài và ảnh hưởng đến sức khỏe tâm thần của người học trong môi trường học tập trực tuyến”</strong>.
+                                Chủ đề nghiên cứu: <strong>“Sự lo âu khi nói tiếng nước ngoài và ảnh hưởng đến sức khỏe tâm thần của người học trong môi trường học tập trực tuyến”</strong> [1].
                             </p>
                             
                             <h4><i class="fas fa-search"></i> Hệ Thống Tra Cứu 14 Nguồn Tài Liệu Harvard:</h4>
@@ -1283,7 +1283,7 @@
 
                             <h4><i class="fas fa-tasks"></i> Bài học cốt lõi & Quy trình đánh giá:</h4>
                             <p>
-                                Mình áp dụng quy trình PRISMA để lọc từ hàng trăm bài viết xuống 14 nguồn tin cậy nhất từ hệ thống thư viện Scopus/ISI. Việc tìm kiếm không dựa vào trực giác mà tuân thủ các toán tử Boolean nâng cao. Từng bài nghiên cứu đều được bóc tách Ưu điểm (giá trị thực chứng) và Nhược điểm (giới hạn phương pháp) để đảm bảo tính khách quan học thuật của dự án.
+                                Mình áp dụng quy trình PRISMA để lọc từ hàng trăm bài viết xuống 14 nguồn tin cậy nhất từ hệ thống thư viện Scopus/ISI [1]. Việc tìm kiếm không dựa vào trực giác mà tuân thủ các toán tử Boolean nâng cao [1]. Từng bài nghiên cứu đều được bóc tách Ưu điểm (giá trị thực chứng) và Nhược điểm (giới hạn phương pháp) để đảm bảo tính khách quan học thuật của dự án [1].
                             </p>
                         </div>
                     </div>
@@ -1456,7 +1456,7 @@
         </div>
     </section>
 
-    <!-- REFLECTION SECTION -->
+    <!-- SECTION ĐÚC KẾT (REFLECTION) -->
     <section class="section-container" id="reflection">
         <div class="section-title">
             <h2>Hành Trình Đúc Kết</h2>
